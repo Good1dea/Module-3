@@ -22,7 +22,7 @@ public class GroupService {
     }
 
     public void groupByName(final String template) {
-        List<StudentGroup> listGroup = repository.searchGroupByName(template.toLowerCase());
+        List<StudentGroup> listGroup = repository.getGroupByName(template.toLowerCase());
         System.out.println(" >> Result : ");
         if (!listGroup.isEmpty()) {
             for (StudentGroup group : listGroup) {

@@ -34,11 +34,11 @@ public class Menu {
                         break;
                     case 2:
                         log.info(" >> 2 : Number of students in each group");
-                        actions.getStudentCountInGroups();
+                        actions.findStudentCountInGroups();
                         break;
                     case 3:
                         log.info(" >> 3 : Average score each group");
-                        actions.getGroupAveragePoints();
+                        actions.findGroupAveragePoints();
                         break;
                     case 4:
                         log.info(" >> 4 : Search lecturer by name");
@@ -50,7 +50,7 @@ public class Menu {
                         break;
                     case 6:
                         log.info(" >> 6 : Students with an average score higher than the value");
-                        actions.getStudentWithAverage();
+                        actions.findStudentWithAverage();
                         break;
                     case 0:
                         log.info(" --> 0 : Exit program <-- ");

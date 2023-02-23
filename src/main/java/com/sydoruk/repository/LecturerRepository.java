@@ -26,7 +26,7 @@ public class LecturerRepository implements Repository<Lecturer> {
         entityManager.close();
     }
 
-    public List searchLecturer(String template){
+    public List getLecturerByName(String template){
         final EntityManager entityManager = HibernateUtil.getEntityManager();
         String hql = "FROM Lecturer WHERE LOWER(firstName) LIKE : template OR LOWER(lastName) LIKE : template";
         return entityManager.createQuery(hql)

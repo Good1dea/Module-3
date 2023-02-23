@@ -22,7 +22,7 @@ public class LecturerService {
     }
 
     public void findLecturerByName(final String name) {
-        List<Lecturer> listLecturer = repository.searchLecturer(name.toLowerCase());
+        List<Lecturer> listLecturer = repository.getLecturerByName(name.toLowerCase());
         System.out.println(" >> Result : ");
         if (!listLecturer.isEmpty()) {
             for (Lecturer lecturer : listLecturer) {

@@ -24,7 +24,7 @@ public class GroupRepository implements Repository<StudentGroup> {
         entityManager.close();
     }
 
-    public List searchGroupByName(final String input) {
+    public List getGroupByName(final String input) {
         final EntityManager entityManager = HibernateUtil.getEntityManager();
         return entityManager.createQuery("FROM StudentGroup WHERE LOWER(namegroup) LIKE : input")
                 .setParameter("input", "%" + input + "%")

@@ -20,11 +20,11 @@ public class Actions {
         GroupService.getInstance().groupByName(UserInput.getInstance().inputGroupName());
     }
 
-    public void getStudentCountInGroups() {
+    public void findStudentCountInGroups() {
         GroupService.getInstance().numberOfStudentInEachGroup();
     }
 
-    public void getGroupAveragePoints() {
+    public void findGroupAveragePoints() {
         GroupService.getInstance().averagePointEachGroup();
     }
 
@@ -36,7 +36,7 @@ public class Actions {
         SubjectService.getInstance().findWorstAndBestAvgPoints();
     }
 
-    public void getStudentWithAverage() {
+    public void findStudentWithAverage() {
         StudentService.getInstance().findStudentsWithAvgHigher(UserInput.getInstance().inputAvgPoints());
     }
 
